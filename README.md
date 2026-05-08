@@ -217,8 +217,11 @@ Express.js
 # AI Integration
 Gemini API
 
-# Folder Structure
+## Folder Structure
+
+```text
 frontend/
+
 backend/
 │
 ├── pipeline/
@@ -232,18 +235,22 @@ backend/
 │   └── generate.js
 │
 ├── server.js
-└── openai.js
+├── openai.js
+└── .env
+```
 API Endpoint
 POST /generate
+## Request
 
-# Request:
-
+```json
 {
   "prompt": "Build a CRM with dashboard and analytics"
 }
+```
 
-# Response:
+## Response
 
+```json
 {
   "pipeline": {
     "intent": {},
@@ -254,9 +261,12 @@ POST /generate
   },
   "metrics": {}
 }
-# Setup Instructions
-npm run dev
+```
+## Setup Instructions
 
+```bash
+npm run dev
+```
 ## Conclusion
 
 This project demonstrates a structured and reliability-focused approach to AI-powered application generation using a multi-stage pipeline architecture.
